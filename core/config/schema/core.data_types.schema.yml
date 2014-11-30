@@ -177,6 +177,11 @@ theme_settings:
         use_default:
           type: boolean
           label: 'Use default'
+    third_party_settings:
+      type: sequence
+      label: 'Third party settings'
+      sequence:
+        - type: theme_settings.third_party.[%key]
 
 theme_breakpoints_default:
   type: sequence
@@ -460,11 +465,11 @@ field.value.string:
 # Schema for the configuration of the  String (long) field type.
 
 field.storage_settings.string_long:
-  type: field.storage_settings.string
+  type: mapping
   label: 'String (long) settings'
 
 field.field_settings.string_long:
-  type: field.field_settings.string
+  type: mapping
   label: 'String (long) settings'
 
 field.value.string_long:
