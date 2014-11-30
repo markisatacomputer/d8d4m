@@ -1,3 +1,6 @@
 [submodule "modules/contrib/media_entity"]
 	path = modules/contrib/media_entity
 	url = git@github.com:drupal-media/media_entity.git
+[submodule "modules/contrib/entity_browser"]
+	path = modules/contrib/entity_browser
+	url = git@github.com:drupal-media/entity_browser.git
